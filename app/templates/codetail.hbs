@@ -1,4 +1,17 @@
-<h2>{{title}}</h1>
-<p>
-  {{description}}
-</p>
+<div class="row">
+  <div class="col-md-9">
+    <h2>{{title}}</h1>
+    <p>
+      {{description}}
+    </p>
+
+    {{#link-to 'codetail.edit' this}} Editar {{/link-to}}
+  </div>
+
+</div>
+
+<div class="row air-top">
+  <div class="col-md-9">
+    {{outlet}}
+  </div>
+</div>
