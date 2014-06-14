@@ -3,7 +3,7 @@
   <div class="col-md-3">
     <ul class="nav nav-pills nav-stacked">
       {{#each}}
-      <li>  <a href="#" > {{title}} </a> </li>
+      {{#link-to 'codetail' this tagName='li'}} <a>{{title}}</a> {{/link-to}}
       {{/each}}
     </ul>
   </div>
