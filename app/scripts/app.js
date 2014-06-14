@@ -8,3 +8,4 @@ require('scripts/routes/*');
 require('scripts/components/*');
 require('scripts/views/*');
 require('scripts/router');
+require('scripts/lib/*')

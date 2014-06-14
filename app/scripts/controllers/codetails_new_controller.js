@@ -3,7 +3,8 @@ EmberCodetails.CodetailsNewController = Ember.ObjectController.extend({
     create: function(){
       var controller = this;
       this.get('model').save().then( function(){
-        controller.transitionToRoute('codetails.index')
+        EmberCodetails.FlashQueue.pushFlash('notice', '¡CodeTail guardado correctamente!');
+        controller.transitionToRoute('codetails.index');
       }.bind(this)  );
     }
   }

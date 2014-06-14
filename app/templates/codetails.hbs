@@ -13,6 +13,12 @@
   </div>
 
   <div class="col-md-9">
+    {{#view EmberCodetails.FlashView id="flash-view"}}
+      <div class='alert alert-success' id='message'>
+        {{view.content.message}}
+      </div>
+    {{/view}}
+
     {{outlet}}
   </div>
 
